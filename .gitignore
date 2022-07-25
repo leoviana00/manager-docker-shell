@@ -1,0 +1,11 @@
+*
+!.gitignore
+!src
+!src/**/*
+!images
+!images/**/*
+!LICENSE
+!Makefile
+!Readme.md
+!requirements.txt
+!main.sh
