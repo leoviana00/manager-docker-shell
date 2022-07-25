@@ -3,7 +3,7 @@
 # Função para validar se a opção digitada é número ou letra
 function validate_type_container() {
     if [[ ${ACESSO} =~ ([0-9]+)$ ]]; then
-        if [[ ${ACESSO} -gt 2 ]]; then
+        if [[ ${ACESSO} -gt 3 ]]; then
             log "Número ${ACESSO} fora do escopo definido, tente novamente ..."
             sleep 5
         elif [[ ${ACESSO} -lt 1 ]]; then
