@@ -6,4 +6,3 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 IYELLOW='\033[1;33m'
 BWhite='\033[1;37m'
-x="False"
