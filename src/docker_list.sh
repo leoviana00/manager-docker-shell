@@ -15,7 +15,7 @@ function docker_container_list() {
 
 function docker_image_list() {
     log "Listando as imagens..."
-    docker images ls
+    docker images 
     sleep 5
 }
 
