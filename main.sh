@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Importaçõe
-source ./src/colors.sh
+source ./lib/colors.sh
+source ./lib/log.sh
 source ./src/docker_list.sh
 source ./src/docker_remove.sh
 source ./src/docker_run.sh
 source ./src/menu_docker_run.sh
-source ./src/log.sh
 source ./src/menu.sh
 source ./src/validacao_options_container.sh
 source ./src/validacao_options_menu.sh
