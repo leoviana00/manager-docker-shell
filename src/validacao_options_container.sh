@@ -4,20 +4,20 @@
 function validate_type_container() {
     if [[ ${ACESSO} =~ ([0-9]+)$ ]]; then
         if [[ ${ACESSO} -gt 3 ]]; then
-            log "Número ${ACESSO} fora do escopo definido, tente novamente ..."
+            log_err "Número ${ACESSO} fora do escopo definido, tente novamente ..."
             sleep 5
         elif [[ ${ACESSO} -lt 1 ]]; then
-            log "Número ${ACESSO} fora do escopo definido, tente novamente ..."
+            log_err "Número ${ACESSO} fora do escopo definido, tente novamente ..."
             sleep 5
         else
             type_container #função type_container em type_container.sh
         fi
     elif [[ ${ACESSO} =~ ^([[:alpha:]]+)$ ]];then
         echo -e "${RED}Você digitou a letra ${ACESSO}, deve-se digitar algum dos números das opções: 1 ou 2. ${NC}"
-        log "Você digitou a letra ${ACESSO}, deve-se digita algum dos números das opções: 1 ou 2."
+        log_err "Você digitou a letra ${ACESSO}, deve-se digita algum dos números das opções: 1 ou 2."
         sleep 5
     else
-        log "Opção ${ACESSO} não definida, tente novamente ..."
+        log_err "Opção ${ACESSO} não definida, tente novamente ..."
         sleep 5
     fi
 }
