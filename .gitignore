@@ -2,6 +2,8 @@
 !.gitignore
 !src
 !src/**/*
+!lib
+!lib/**/*
 !images
 !images/**/*
 !LICENSE
